@@ -10,7 +10,6 @@ const withImages = require('next-images');
 
 const baseUrl = process.env.API_URL;
 const siteUrl = process.env.SITE_URL;
-const domain = process.env.DOMAIN;
 
 const config = {
   webpack: config => {
@@ -33,7 +32,6 @@ const config = {
   publicRuntimeConfig: {
     baseUrl,
     siteUrl,
-    domain,
   }
 };
 

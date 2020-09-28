@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3589be9d-e5c7-4b8c-a59d-d7e82a53ade2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/auth-form-cps.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/entities/user/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/entities/user/actions.ts" afterDir="false" />
+    <list default="true" id="3589be9d-e5c7-4b8c-a59d-d7e82a53ade2" name="Default Changelist" comment="RemoveDomain">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601126951065</updated>
-      <workItem from="1601126952118" duration="31751000" />
+      <workItem from="1601126952118" duration="31990000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1601275514273</created>
@@ -90,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601276539267</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test">
+      <created>1601277041559</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601277041559</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test">
+      <created>1601277055205</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601277055205</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,13 +136,17 @@
       <screen x="0" y="23" width="1920" height="1093" />
     </state>
     <state x="830" y="406" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1093@0.23.1920.1093" timestamp="1601234886801" />
-    <state x="558" y="143" key="CommitChangelistDialog2" timestamp="1601276539160">
+    <state x="558" y="143" key="CommitChangelistDialog2" timestamp="1601277322643">
       <screen x="0" y="23" width="1920" height="1093" />
     </state>
-    <state x="558" y="143" key="CommitChangelistDialog2/0.23.1920.1093@0.23.1920.1093" timestamp="1601276539160" />
-    <state x="582" y="289" key="Vcs.Push.Dialog.v2" timestamp="1601276540477">
+    <state x="558" y="143" key="CommitChangelistDialog2/0.23.1920.1093@0.23.1920.1093" timestamp="1601277322643" />
+    <state x="582" y="289" key="Vcs.Push.Dialog.v2" timestamp="1601277057318">
       <screen x="0" y="23" width="1920" height="1093" />
     </state>
-    <state x="582" y="289" key="Vcs.Push.Dialog.v2/0.23.1920.1093@0.23.1920.1093" timestamp="1601276540477" />
+    <state x="582" y="289" key="Vcs.Push.Dialog.v2/0.23.1920.1093@0.23.1920.1093" timestamp="1601277057318" />
+    <state x="683" y="304" width="598" height="490" key="find.popup" timestamp="1601277389757">
+      <screen x="0" y="23" width="1920" height="1093" />
+    </state>
+    <state x="683" y="304" width="598" height="490" key="find.popup/0.23.1920.1093@0.23.1920.1093" timestamp="1601277389757" />
   </component>
 </project>
