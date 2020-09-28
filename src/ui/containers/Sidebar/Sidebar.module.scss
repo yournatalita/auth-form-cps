@@ -1,0 +1,42 @@
+@import 'src/assets/styles/_services.scss';
+
+.root {
+  position: relative;
+  width: 256px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  background: $c-white;
+  box-shadow: 6px 0 18px rgba(0, 0, 0, 0.06);
+  padding: 40px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 4px;
+  background: $c-background;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 40px;
+}

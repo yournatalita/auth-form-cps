@@ -1,0 +1,124 @@
+@import 'src/assets/styles/_services.scss';
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  cursor: pointer;
+}
+
+.inputWrapper {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  font-size: 15px;
+  height: 48px;
+  border: 0;
+  border-bottom: 1px solid $c-border;
+  padding: 21px 0 6px 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  transition: border-color 0.2s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+
+  &::placeholder {
+    color: rgba($c-black, 0.5);
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    border-color: $c-gray-help;
+  }
+
+  &:focus:not(:disabled) {
+    border-color: $c-black;
+  }
+
+  &::-ms-reveal,
+  &::-ms-clear {
+    display: none;
+  }
+
+  &:read-only {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  color: $c-blue;
+  font-size: $font-size-xxs;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  opacity: 0;
+  transition: tramsform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+
+  .isFull & {
+    opacity: 1;
+  }
+}
+
+.required {
+}
+
+.hasOpenEye {
+  padding-right: 40px;
+}
+
+.passwordEye {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  color: $c-black;
+}
+
+.preloader {
+  background-color: $c-white;
+  position: absolute;
+  z-index: 1;
+  right: 12px;
+  top: calc(50% - 10px);
+}
+
+.errorText {
+  color: $c-red;
+  margin-top: 5px;
+  font-size: $font-size-xs;
+}
+
+.icon {
+  pointer-events: none;
+}
+
+.iconHide {
+  margin-top: 1.5px;
+  pointer-events: none;
+}

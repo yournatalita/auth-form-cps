@@ -1,0 +1,15 @@
+@import 'src/assets/styles/_services.scss';
+
+.root {
+  display: flex;
+  min-height: calc(100vh);
+  min-width: 100%;
+}
+
+.sidebar {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+}

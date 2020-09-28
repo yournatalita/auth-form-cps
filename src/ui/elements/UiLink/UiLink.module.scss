@@ -1,0 +1,12 @@
+@import 'src/assets/styles/_services.scss';
+
+.root {
+  color: $c-blue;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out, border 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  position: relative;
+
+  &:hover {
+    color: $c-black;
+  }
+}
