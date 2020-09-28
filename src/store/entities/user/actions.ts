@@ -3,7 +3,7 @@ import { TAction, StoreState, AuthRequestData } from './index.d';
 import * as types from './actionTypes';
 import axios from 'axios';
 import sha256 from 'crypto-js/sha256';
-import Router from "next/router";
+import Router from 'next/router';
 
 export const sendAuthAction = (dataValues: AuthRequestData) => {
   return async (dispatch: Dispatch<TAction<Partial<StoreState>>>): Promise<void> => {
@@ -17,7 +17,6 @@ export const sendAuthAction = (dataValues: AuthRequestData) => {
     });
 
     const { status, data } = response;
-
     if (status) {
       dispatch({
         type: types.AUTH_USER,
