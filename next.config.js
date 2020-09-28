@@ -31,11 +31,7 @@ const config = {
     url: false,
     modules: true,
     localIdentName: dev ? '[name]__[local]___[hash:base64:5]' : '[hash:base64:5]'
-  },
-  publicRuntimeConfig: {
-    baseUrl,
-    siteUrl,
   }
 };
 
-module.exports = config;
+module.exports = withImages(config);
