@@ -12,12 +12,14 @@ const baseUrl = process.env.API_URL;
 const siteUrl = process.env.SITE_URL || process.env.VERCEL_URL;
 
 const config = {
-  webpack: config => {
-    // config.devtool = 'eval-source-map';
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.devtool = 'eval-source-map';
+    }
     config.resolve.alias['@'] = path.join(__dirname, 'src');
     config.plugins.push(
       new FilterWarningsPlugin({
-        exclude: /mini-css-extract-plugin[^]*Conflicting order between:/
+        exclude: /mini-css-extract-plugin[^]*Conflicting order between:/,
       })
     );
     return config;
@@ -27,12 +29,12 @@ const config = {
     importLoaders: true,
     url: false,
     modules: true,
-    localIdentName: dev ? '[name]__[local]___[hash:base64:5]' : '[hash:base64:5]'
+    localIdentName: dev ? '[name]__[local]___[hash:base64:5]' : '[hash:base64:5]',
   },
   publicRuntimeConfig: {
     baseUrl,
     siteUrl,
-  }
+  },
 };
 
 module.exports = withImages(config);
