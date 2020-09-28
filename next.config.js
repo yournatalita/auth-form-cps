@@ -1,10 +1,6 @@
-// TODO: remove debugging
-console.log(process.env);
-
-
 const path = require('path');
 
-require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+// require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 const nodeEnv = process.env.NODE_ENV;
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
@@ -14,6 +10,9 @@ const withImages = require('next-images');
 
 const baseUrl = process.env.API_URL;
 const siteUrl = process.env.SITE_URL || process.env.VERCEL_URL;
+
+// TODO: remove debugging
+console.log(process.env);
 
 
 const config = {
