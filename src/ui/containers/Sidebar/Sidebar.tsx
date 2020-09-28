@@ -11,7 +11,6 @@ import styles from './Sidebar.module.scss';
 
 const Sidebar = ({ activeLink }: SidebarProps): JSX.Element => {
   const dispatch = useDispatch();
-
   return (
     <div className={styles.root}>
       <ul className={styles.list}>
