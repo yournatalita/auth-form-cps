@@ -1,24 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import SVG from 'react-inlinesvg';
-import { useDispatch, useSelector } from 'react-redux';
-import { logout, selectLogout } from '@/store/entities/user';
+import { useDispatch } from 'react-redux';
+import { logout } from '@/store/entities/user';
 
 import UiLink from '@/ui/elements/UiLink/UiLink';
 import Button from '@/ui/elements/Button/Button';
 
 import { SidebarProps } from './Sidebar.d';
 import styles from './Sidebar.module.scss';
-import Router from 'next/router';
 
 const Sidebar = ({ activeLink }: SidebarProps): JSX.Element => {
   const dispatch = useDispatch();
-  const logoutStatus = useSelector(selectLogout);
-
-  // useEffect(() => {
-  //   if (logoutStatus) {
-  //     Router.push('/');
-  //   }
-  // }, [logoutStatus]);
 
   return (
     <div className={styles.root}>
