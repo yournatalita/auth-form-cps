@@ -11,6 +11,9 @@ const withImages = require('next-images');
 const baseUrl = process.env.API_URL;
 const siteUrl = process.env.SITE_URL || process.env.VERCEL_URL;
 
+// TODO: remove debugging
+console.log(baseUrl, siteUrl, nodeEnv);
+
 const config = {
   webpack: config => {
     config.devtool = 'eval-source-map';
