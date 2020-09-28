@@ -17,6 +17,7 @@ export const sendAuthAction = (dataValues: AuthRequestData) => {
     });
 
     const { status, data } = response;
+    
     if (status) {
       dispatch({
         type: types.AUTH_USER,
