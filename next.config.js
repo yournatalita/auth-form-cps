@@ -12,16 +12,16 @@ const baseUrl = process.env.API_URL;
 const siteUrl = process.env.SITE_URL || process.env.VERCEL_URL;
 
 const config = {
-  // webpack: config => {
-  //   config.devtool = 'eval-source-map';
-  //   config.resolve.alias['@'] = path.join(__dirname, 'src');
-  //   config.plugins.push(
-  //     new FilterWarningsPlugin({
-  //       exclude: /mini-css-extract-plugin[^]*Conflicting order between:/
-  //     })
-  //   );
-  //   return config;
-  // },
+  webpack: config => {
+    // config.devtool = 'eval-source-map';
+    config.resolve.alias['@'] = path.join(__dirname, 'src');
+    config.plugins.push(
+      new FilterWarningsPlugin({
+        exclude: /mini-css-extract-plugin[^]*Conflicting order between:/
+      })
+    );
+    return config;
+  },
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: true,
