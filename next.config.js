@@ -9,7 +9,7 @@ const dev = nodeEnv !== 'production';
 const withImages = require('next-images');
 
 const baseUrl = process.env.API_URL;
-const siteUrl = process.env.SITE_URL;
+const siteUrl = process.env.SITE_URL || process.env.VERSEL_URL;
 
 const config = {
   webpack: config => {
