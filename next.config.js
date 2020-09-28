@@ -38,4 +38,4 @@ const config = {
   }
 };
 
-module.exports = withImages(config);
+module.exports = config;
